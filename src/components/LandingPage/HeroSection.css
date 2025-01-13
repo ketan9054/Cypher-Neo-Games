@@ -1,0 +1,81 @@
+.hero {
+  /* background-image: url("./assets//images//app_icon.png"); /* Background image */
+  /* background-size: contain; */
+  /* background-position: center; */
+  /* background-position: center; Centers the logo */
+  /* background-repeat: no-repeat; Ensures the logo doesn't repeat */
+  padding: 60px 20px;
+  /* height: 100vh; */
+  background: linear-gradient(
+    to bottom,
+    #e3bb09,
+    #e65c00
+  ); /* Gradient effect */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto; /* Centers the content */
+}
+
+.hero-logo {
+  max-width: 300px; /* Adjust size of the logo */
+  margin-bottom: 20px; /* Space between logo and text */
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  font-size: 1.3em;
+  padding: 15px 40px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #e65c00;
+  transform: scale(1.1);
+}
+
+/* Additional text section */
+.additional-text {
+  text-align: center;
+  margin-top: 40px; /* Space below the hero content */
+  font-size: 1.2em;
+  color: #fff;
+}

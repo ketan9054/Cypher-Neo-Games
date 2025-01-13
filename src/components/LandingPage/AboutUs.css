@@ -1,0 +1,117 @@
+/* Container for About Us section */
+.about-us-container {
+  width: 100%;
+  max-width: 100%; /* Prevent overflow restriction */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #333;
+  overflow: visible; /* Ensure content inside isn't clipped */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  .faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .faq-question h3 {
+    margin: 0;
+  }
+
+  .faq-answer {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+}
+
+/* Heading styles */
+.about-us-container h2 {
+  text-align: center;
+  font-size: 2em; /* Heading size */
+  margin-bottom: 15px;
+  color: #ca680d; /* Dark text for heading */
+  line-height: 1.4; /* Add spacing between heading lines */
+}
+
+/* Paragraph styles */
+.about-us-container p {
+  font-size: 1.1em; /* Base paragraph font size */
+  color: #000000; /* Lighter text for paragraph */
+  max-width: 800px; /* Limit the paragraph width */
+  margin: 0 auto; /* Center the paragraph */
+  line-height: 1.8; /* Add spacing between lines for readability */
+  text-align: justify; /* Justify text alignment */
+  word-wrap: break-word; /* Break long words if necessary */
+  white-space: normal;
+}
+
+/* Line after the paragraph */
+.line-after-paragraph {
+  width: 100%; /* Full-width line */
+  height: 2px; /* Height of the line */
+  background-color: #333; /* Line color */
+  margin: 20px 0; /* Add space above and below the line */
+}
+
+/* Flexbox container for side-by-side paragraphs or content */
+.side-by-side {
+  display: flex;
+  justify-content: space-between; /* Add space between items */
+  gap: 20px; /* Add spacing between the two items */
+  margin-top: 20px;
+}
+
+.side-by-side p {
+  flex: 1; /* Equal space for each paragraph */
+  font-size: 1em; /* Adjust font size */
+  color: #666; /* Text color */
+  text-align: justify; /* Justify text alignment */
+  line-height: 1.6; /* Maintain readability */
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .about-us-container h2 {
+    font-size: 1.8em; /* Slightly smaller heading */
+  }
+
+  .about-us-container p {
+    font-size: 1em; /* Reduce paragraph font size */
+    font-size: 1em; /* Reduce font size for smaller screens */
+    max-width: 100%; /* Allow full width for smaller screens */
+    word-wrap: break-word; /* Ensure long words break */
+    white-space: normal; /* Let text flow naturally */
+  }
+
+  .side-by-side {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .side-by-side p {
+    margin-bottom: 20px; /* Add space between stacked paragraphs */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .about-us-container h2 {
+    font-size: 1.5em; /* Smaller heading size */
+  }
+
+  .about-us-container p {
+    font-size: 0.95em; /* Further reduce font size */
+  }
+}

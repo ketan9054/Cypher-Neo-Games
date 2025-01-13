@@ -1,0 +1,61 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* background-color: #001437; */
+  background: linear-gradient(135deg, #4e342e 0%, #d35c38 50%, #dec989 100%);
+
+  padding: 15px 30px;
+}
+
+.logo {
+  margin-right: 2vw; /* Use relative units for responsiveness */
+  max-width: 100px; /* Ensure the logo size scales on smaller screens */
+}
+
+.nav {
+  display: flex;
+  gap: 2vw; /* Adjust space between links responsively */
+}
+
+.dropdown {
+  color: white;
+  cursor: pointer;
+  font-size: 5rem;
+  transition: "color 0.3s";
+}
+.dropdown:hover {
+  color: #dec989; /* Highlight with a gold-like shade */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 1em; /* Smaller spacing on mobile devices */
+  }
+
+  .nav {
+    gap: 1em; /* Reduce space between links */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 80px; /* Reduce logo size further */
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}

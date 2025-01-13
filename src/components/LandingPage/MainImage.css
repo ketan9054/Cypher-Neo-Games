@@ -1,0 +1,38 @@
+/* MainImage.css */
+
+/* Container for the image */
+.main-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; Space between header and image */
+  overflow: hidden; /* Hide any overflow */
+}
+
+/* Main image styling */
+.main-image {
+  width: 100%; /* Make the image width responsive */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Cover the container area without stretching */
+  /* border-radius: 10px; Optional: rounded corners */
+}
+
+/* Adjust image height for large screens */
+@media (min-width: 768px) {
+  .main-image {
+    max-height: 500px; /* Limit the height for large screens */
+  }
+}
+
+/* Adjust image height for smaller screens */
+@media (max-width: 768px) {
+  .main-image {
+    max-height: 300px; /* Reduce max-height on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-image {
+    max-height: 200px; /* Further reduce max-height on very small screens */
+  }
+}

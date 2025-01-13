@@ -1,0 +1,34 @@
+.second-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; Space between images */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Styling for the second image */
+.second-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* border-radius: 10px; Optional: rounded corners */
+}
+
+/* Responsive adjustments for the second image */
+@media (min-width: 768px) {
+  .second-image {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .second-image {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .second-image {
+    max-height: 200px;
+  }
+}
